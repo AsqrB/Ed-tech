@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Figma from A to Z - Codelingo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f7fb;
+    }
+    .sidebar {
+      min-height: 100vh;
+      background-color: #fff;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    }
+    .course-video iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 12px;
+    }
+    .section-title {
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .accordion-button {
+      font-weight: 500;
+    }
+    .lesson-link link-light text-decoration-none {
+      cursor: pointer;
+      color: #0d6efd;
+      text-decoration: underline;
+    }
+    .lesson-link link-light text-decoration-none:hover {
+      color: #0a58ca;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-2 sidebar d-flex flex-column p-3">
+        <h4 class="mb-4 text-primary">AsqrB Courses</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="nav-link text-dark">Dashboard</a></li>
+          <li class="nav-item"><a href="#" class="nav-link fw-bold text-primary">Courses</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-dark">eBook</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-dark">Code Challenges</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-dark">Community</a></li>
+        </ul>
+      </nav>
+
+      <div class="col-md-10 row">
+        <!-- Course Header with Buttons -->
+        <div class="mb-0 p-4 pb-0 d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+                <button class="card mt-2 mx-2 btn btn-outlint-dark h-50">&lt;</button>
+                <div>
+                    <h2 class="fw-bold">Figma from A to Z</h2>
+                    <p class="text-muted mb-1">UI/UX Design</p>
+                    <span class="badge bg-info text-dark">★ 38 lessons</span>
+                    <span class="badge bg-light text-dark">★ 4h 30min</span>
+                    <span class="badge bg-warning text-dark">★ 4.5 (126 reviews)</span>
+                </div>
+            </div>
+            <div class="d-flex gap-2 p-4 px-2">
+                <a href="#" class="btn text-primary">Share</a>
+                <button class="btn btn-primary">Enroll Now</button>
+            </div>
+        </div>
+        <!-- Main Content Area -->
+        <main class="col-md-8 p-4">
+
+            <!-- Video Player -->
+            <div class="course-video mb-4">
+            <iframe id="videoPlayer" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+            </div>
+
+            <!-- Study Material Section -->
+            <div>
+            <h5 class="section-title">About Course</h5>
+            <p>This comprehensive course will guide you through Figma’s design features and workflows. Perfect for UI/UX designers, product managers, and anyone interested in design systems.</p>
+            <ul>
+                <li>Setting up the environment</li>
+                <li>Responsive Design</li>
+                <li>Advanced HTML practices</li>
+                <li>Building a portfolio website</li>
+                <!-- Add more points as needed -->
+            </ul>
+            </div>
+        </main>
+        <!-- Right Sidebar -->
+        <aside class="col-md-4 p-4">
+            <!-- Course Content Accordion -->
+            <div>
+            <h5 class="section-title">Course Content</h5>
+            <div class="accordion" id="courseAccordion">
+                <!-- 01: Intro  -->
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    01: Intro (22 mins)
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse bg-light text-dark collapse show" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                    <ul class="list-unstyled">
+                        <li class="my-2 lesson-link  text-decoration-none d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/ScMzIvxBSi4')"><span>▶ Introduction</span> <span>2 min</span></li>
+                        <li class="my-2 lesson-link  text-decoration-none d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')"><span>▶ What is figma?</span> <span>5 min</span></li>
+                        <li class="my-2 lesson-link  text-decoration-none d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/ysz5S6PUM-U')"><span>▶ Understanding figma</span> <span>12 min</span></li>
+                        <li class="my-2 lesson-link  text-decoration-none d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/jNQXAC9IVRw')"><span>▶ UI Tour</span> <span>3 min</span></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <!-- 02: Intermediate Level Stuff -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        02: Intermediate Level Stuff (1h 20min)
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse bg-light text-dark collapse" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/Bk0ztBzvC2U')"><span>▶ Components</span> <span>15 min</span></li>
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/KzjzKBxp_Go')"><span>▶ Constraints</span> <span>20 min</span></li>
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/Tk0lfkge5Nw')"><span>▶ Smart Selection</span> <span>10 min</span></li>
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/xNT7R5YVZjo')"><span>▶ Auto Layout</span> <span>35 min</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- 03: Advanced Stuff -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        03: Advanced Stuff (36min)
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse bg-light text-dark collapse" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                            <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/LzMD7HRUbck')"><span>▶ Prototyping Basics</span> <span>12 min</span></li>
+                            <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/D7H3uNJntzk')"><span>▶ Interactive Components</span> <span>14 min</span></li>
+                            <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/uyZJcWh_3Hw')"><span>▶ Version History</span> <span>10 min</span></li>
+                        </ul> 
+                    </div>
+                    </div>
+                </div>
+                <!-- 04: Imports & Graphics -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        04: Imports & Graphics (40min)
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse bg-light text-dark collapse" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/fzF0YMWjxxM')"><span>▶ Importing Assets</span> <span>15 min</span></li>
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/KNd7P0zT9sA')"><span>▶ Working with Vectors</span> <span>25 min</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- 05: Components in Figma -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                        05: Components in Figma (1h 12min)
+                    </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse bg-light text-dark collapse" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/pVDT75VSYbQ')"><span>▶ Creating Components</span> <span>20 min</span></li>
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/NKDdO8LJc2U')"><span>▶ Variants</span> <span>25 min</span></li>
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/G_1YVW_3SRE')"><span>▶ Nested Components</span> <span>27 min</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- 06: Styles in Figma -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                        06: Styles in Figma (41min)
+                    </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse bg-light text-dark collapse" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/QujR9YjB-NY')"><span>▶ Text & Color Styles</span> <span>20 min</span></li>
+                          <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/BNHAC5zRIE4')"><span>▶ Grid & Effects</span> <span>21 min</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+  
+                <!-- 07: Summary -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                        07: Summary (8min)
+                    </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse bg-light text-dark collapse" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                        <li class="my-2 lesson-link d-flex justify-content-between" onclick="changeVideo('https://www.youtube.com/embed/FcRhz0vH8Rk')"><span>▶ Final Recap</span> <span>8 min</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+  
+                <!-- Add 6 more accordion items here for other course modules -->
+            </div>
+            </div>
+
+            <!-- Instructor Info -->
+            <div class="mt-4">
+            <h5 class="section-title">Instructor</h5>
+            <div class="d-flex align-items-center">
+                <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Instructor" />
+                <div>
+                <strong>Crystal Lucas</strong><br />
+                <small class="text-muted">UI/UX Specialist</small><br />
+                <span class="text-warning">★ 4.8</span>
+                </div>
+            </div>
+            <p class="mt-2">Crystal is a seasoned designer with 10+ years of experience helping students and teams build modern, user-focused interfaces using Figma and other tools.</p>
+            </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeVideo(url) {
+      document.getElementById("videoPlayer").src = url;
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
